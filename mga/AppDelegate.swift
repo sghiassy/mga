@@ -12,6 +12,24 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        // 1
+//        guard userActivity.activityType == NSUserActivityTypeBrowsingWeb,
+//            let url = userActivity.webpageURL,
+//            let components = URLComponents(url: url, resolvingAgainstBaseURL: true) else {
+//            return false
+//        }
+//
+//        // 3
+//        let webpageUrl = URL(string: "http://gorpon.herokuapp.com")!
+//        application.open(webpageUrl, options:["thing":"thing"]) { (works) in
+//            //
+//        }
+//
+//        return false
+        return true
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
