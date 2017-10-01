@@ -1,0 +1,27 @@
+{
+  "name": "carousel",
+  "version": "0.1.0",
+  "summary": "A short description of carousel.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Shaheen Ghiassy/carousel",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Shaheen Ghiassy": "shaheen@groupon.com"
+  },
+  "source": {
+    "git": "https://github.com/Shaheen Ghiassy/carousel.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "carousel/Classes/**/*",
+  "resource_bundles": {
+    "carousel": [
+      "carousel/Assets/*.png"
+    ]
+  }
+}

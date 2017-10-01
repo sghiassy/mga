@@ -1,0 +1,6 @@
+framework module dealdetails {
+  umbrella header "dealdetails-umbrella.h"
+
+  export *
+  module * { export * }
+}

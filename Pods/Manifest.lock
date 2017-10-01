@@ -1,15 +1,37 @@
 PODS:
   - Alamofire (4.5.1)
+  - carousel (0.1.0)
+  - carousel-light (0.1.0)
+  - checkout (0.1.0)
+  - dealdetails (0.1.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire
+  - carousel (from `../carousel`)
+  - carousel-light (from `../carousel-light`)
+  - checkout (from `../checkout`)
+  - dealdetails (from `../dealdetails`)
   - SwiftyJSON
+
+EXTERNAL SOURCES:
+  carousel:
+    :path: ../carousel
+  carousel-light:
+    :path: ../carousel-light
+  checkout:
+    :path: ../checkout
+  dealdetails:
+    :path: ../dealdetails
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  carousel: 1f0447c6b552e1b2bcbd70388b2c694551e1c377
+  carousel-light: 038184d22e1419e7f645e63c3c88314cb1050c1e
+  checkout: b259c252b7bf3ffa29c30867cbf1a30213d27646
+  dealdetails: 95dcdd2917a668416942c222b30f9ee4b2537dd9
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 048d2b20f7f2d030eec77efe9fa06d12ed3625f2
+PODFILE CHECKSUM: 8fe3b80eeaa0b36170390752d192ad1f829b265b
 
 COCOAPODS: 1.3.1

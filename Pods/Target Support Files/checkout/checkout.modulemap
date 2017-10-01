@@ -1,0 +1,6 @@
+framework module checkout {
+  umbrella header "checkout-umbrella.h"
+
+  export *
+  module * { export * }
+}
