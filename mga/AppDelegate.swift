@@ -15,15 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var nav: UINavigationController?
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
-        let initialViewController = ViewController(text: "From UserActivity")
+        
+        let url = userActivity.webpageURL
+        let path = url?.path ?? "/unknown"
+        let query = url?.query ?? "?blank"
+        let initialViewController = ViewController(path: path, query: query)
         self.nav?.pushViewController(initialViewController, animated: true)
+        
         return true
     }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let initialViewController = ViewController(text: "From AppDelegate")
+        let initialViewController = ViewController(path: "AppDelegate", query: "nil")
         initialViewController.view.frame = UIScreen.main.bounds
         self.nav = UINavigationController(rootViewController: initialViewController)
 

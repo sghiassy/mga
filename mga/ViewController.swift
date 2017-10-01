@@ -10,10 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var text: String
+    var path: String
+    var query: String
     
-    init(text: String) {
-        self.text = text
+    init(path: String, query: String) {
+        self.path = path
+        self.query = query
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -25,11 +27,18 @@ class ViewController: UIViewController {
         self.view.backgroundColor = UIColor.blue
         
         let label = UILabel()
-        label.text = self.text
-        label.font = UIFont.systemFont(ofSize: 40)
+        label.text = self.path
+        label.font = UIFont.systemFont(ofSize: 20)
         label.textColor = UIColor.white
-        label.frame = CGRect(origin: .zero, size: CGSize.init(width: 400, height: 400))
+        label.frame = CGRect(origin: CGPoint.init(x: 0, y: 100), size: CGSize.init(width: UIScreen.main.bounds.width, height: 75))
         self.view.addSubview(label)
+        
+        let query = UILabel()
+        query.text = self.query
+        query.font = UIFont.systemFont(ofSize: 20)
+        query.textColor = UIColor.white
+        query.frame = CGRect(origin: CGPoint.init(x: 0, y: 200), size: CGSize.init(width: UIScreen.main.bounds.width, height: 75))
+        self.view.addSubview(query)
     }
 
 
