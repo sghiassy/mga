@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EB8EC8BEA795DCA474DDC97 /* Pods_mga.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E6FA5AD3306CF0897A8729 /* Pods_mga.framework */; };
 		AA4B0D101F80B1170099EBD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4B0D0F1F80B1170099EBD3 /* AppDelegate.swift */; };
 		AA4B0D121F80B1170099EBD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4B0D111F80B1170099EBD3 /* ViewController.swift */; };
 		AA4B0D151F80B1180099EBD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4B0D131F80B1180099EBD3 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03771AABBED4E370B2924582 /* Pods-mga.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mga.release.xcconfig"; path = "Pods/Target Support Files/Pods-mga/Pods-mga.release.xcconfig"; sourceTree = "<group>"; };
+		A95D55652968CDA3A7F154A9 /* Pods-mga.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mga.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mga/Pods-mga.debug.xcconfig"; sourceTree = "<group>"; };
 		AA4B0D0C1F80B1170099EBD3 /* mga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4B0D0F1F80B1170099EBD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA4B0D111F80B1170099EBD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		AA4B0D2B1F80B1180099EBD3 /* mgaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mgaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4B0D2F1F80B1180099EBD3 /* mgaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mgaUITests.swift; sourceTree = "<group>"; };
 		AA4B0D311F80B1180099EBD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1E6FA5AD3306CF0897A8729 /* Pods_mga.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mga.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EB8EC8BEA795DCA474DDC97 /* Pods_mga.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64C8BB353231302525E53B62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1E6FA5AD3306CF0897A8729 /* Pods_mga.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AA4B0D031F80B1170099EBD3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				AA4B0D231F80B1180099EBD3 /* mgaTests */,
 				AA4B0D2E1F80B1180099EBD3 /* mgaUITests */,
 				AA4B0D0D1F80B1170099EBD3 /* Products */,
+				F1FDA4C1ED1FEB9167696A42 /* Pods */,
+				64C8BB353231302525E53B62 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = mgaUITests;
 			sourceTree = "<group>";
 		};
+		F1FDA4C1ED1FEB9167696A42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A95D55652968CDA3A7F154A9 /* Pods-mga.debug.xcconfig */,
+				03771AABBED4E370B2924582 /* Pods-mga.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA4B0D341F80B1180099EBD3 /* Build configuration list for PBXNativeTarget "mga" */;
 			buildPhases = (
+				831D28DEFC60928B5FF6C811 /* [CP] Check Pods Manifest.lock */,
 				AA4B0D081F80B1170099EBD3 /* Sources */,
 				AA4B0D091F80B1170099EBD3 /* Frameworks */,
 				AA4B0D0A1F80B1170099EBD3 /* Resources */,
+				6F77AF69CB9CB8A1576BE535 /* [CP] Embed Pods Frameworks */,
+				862F555917233FDF103104E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F77AF69CB9CB8A1576BE535 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mga/Pods-mga-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mga/Pods-mga-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		831D28DEFC60928B5FF6C811 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mga-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		862F555917233FDF103104E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mga/Pods-mga-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AA4B0D081F80B1170099EBD3 /* Sources */ = {
@@ -424,6 +507,7 @@
 		};
 		AA4B0D351F80B1180099EBD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A95D55652968CDA3A7F154A9 /* Pods-mga.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +523,7 @@
 		};
 		AA4B0D361F80B1180099EBD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03771AABBED4E370B2924582 /* Pods-mga.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
