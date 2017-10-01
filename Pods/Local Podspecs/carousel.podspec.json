@@ -23,5 +23,6 @@
     "carousel": [
       "carousel/Assets/*.png"
     ]
-  }
+  },
+  "resources": "carousel/**/*.{png,json}"
 }

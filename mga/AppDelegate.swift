@@ -36,6 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         self.window?.rootViewController = self.nav
         self.nav?.setNavigationBarHidden(true, animated: false)
+        UIApplication.shared.isStatusBarHidden = true
         self.window?.makeKeyAndVisible()
         
         return true
