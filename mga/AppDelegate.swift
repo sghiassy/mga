@@ -15,11 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
         // 1
-//        guard userActivity.activityType == NSUserActivityTypeBrowsingWeb,
-//            let url = userActivity.webpageURL,
-//            let components = URLComponents(url: url, resolvingAgainstBaseURL: true) else {
-//            return false
-//        }
+        guard userActivity.activityType == NSUserActivityTypeBrowsingWeb,
+            let url = userActivity.webpageURL,
+            let components = URLComponents(url: url, resolvingAgainstBaseURL: true) else {
+            return false
+        }
 //
 //        // 3
 //        let webpageUrl = URL(string: "http://gorpon.herokuapp.com")!
@@ -33,7 +33,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let initialViewController = ViewController(text: "FromAppDelegate")
+        initialViewController.view.frame = UIScreen.main.bounds
+        let nc = UINavigationController(rootViewController: initialViewController)
+        
+        
+        
+        self.window?.rootViewController = nc
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 

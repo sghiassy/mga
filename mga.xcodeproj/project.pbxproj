@@ -10,11 +10,11 @@
 		6EB8EC8BEA795DCA474DDC97 /* Pods_mga.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E6FA5AD3306CF0897A8729 /* Pods_mga.framework */; };
 		AA4B0D101F80B1170099EBD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4B0D0F1F80B1170099EBD3 /* AppDelegate.swift */; };
 		AA4B0D121F80B1170099EBD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4B0D111F80B1170099EBD3 /* ViewController.swift */; };
-		AA4B0D151F80B1180099EBD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4B0D131F80B1180099EBD3 /* Main.storyboard */; };
 		AA4B0D171F80B1180099EBD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA4B0D161F80B1180099EBD3 /* Assets.xcassets */; };
 		AA4B0D1A1F80B1180099EBD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4B0D181F80B1180099EBD3 /* LaunchScreen.storyboard */; };
 		AA4B0D251F80B1180099EBD3 /* mgaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4B0D241F80B1180099EBD3 /* mgaTests.swift */; };
 		AA4B0D301F80B1180099EBD3 /* mgaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4B0D2F1F80B1180099EBD3 /* mgaUITests.swift */; };
+		AA54DCB61F80C2CD005D6C07 /* mga.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = AA6FE8231F80B5250062BE7C /* mga.entitlements */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		AA4B0D0C1F80B1170099EBD3 /* mga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4B0D0F1F80B1170099EBD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA4B0D111F80B1170099EBD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AA4B0D141F80B1180099EBD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA4B0D161F80B1180099EBD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA4B0D191F80B1180099EBD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA4B0D1B1F80B1180099EBD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,7 +115,6 @@
 				AA6FE8231F80B5250062BE7C /* mga.entitlements */,
 				AA4B0D0F1F80B1170099EBD3 /* AppDelegate.swift */,
 				AA4B0D111F80B1170099EBD3 /* ViewController.swift */,
-				AA4B0D131F80B1180099EBD3 /* Main.storyboard */,
 				AA4B0D161F80B1180099EBD3 /* Assets.xcassets */,
 				AA4B0D181F80B1180099EBD3 /* LaunchScreen.storyboard */,
 				AA4B0D1B1F80B1180099EBD3 /* Info.plist */,
@@ -266,9 +264,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA54DCB61F80C2CD005D6C07 /* mga.entitlements in Resources */,
 				AA4B0D1A1F80B1180099EBD3 /* LaunchScreen.storyboard in Resources */,
 				AA4B0D171F80B1180099EBD3 /* Assets.xcassets in Resources */,
-				AA4B0D151F80B1180099EBD3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,14 +384,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AA4B0D131F80B1180099EBD3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA4B0D141F80B1180099EBD3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AA4B0D181F80B1180099EBD3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -539,15 +529,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = mga/mga.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = D69WEANLKK;
 				INFOPLIST_FILE = mga/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.herokuapp.gorpon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "cfe87ee7-72fc-496d-a3cb-b7059e7bbb3e";
+				PROVISIONING_PROFILE_SPECIFIER = "mga-production";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
