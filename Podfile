@@ -4,4 +4,5 @@ use_frameworks!
 target 'mga' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'AirGap', :path => '../air-gap/'
 end

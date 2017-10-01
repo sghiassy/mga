@@ -1,0 +1,6 @@
+framework module AirGap {
+  umbrella header "AirGap-umbrella.h"
+
+  export *
+  module * { export * }
+}

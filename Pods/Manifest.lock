@@ -1,15 +1,22 @@
 PODS:
+  - AirGap (0.1.0)
   - Alamofire (4.5.1)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
+  - AirGap (from `../air-gap/`)
   - Alamofire
   - SwiftyJSON
 
+EXTERNAL SOURCES:
+  AirGap:
+    :path: ../air-gap/
+
 SPEC CHECKSUMS:
+  AirGap: cb9b171c564ec7cbd73c7d5250a4f3c378e92286
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 048d2b20f7f2d030eec77efe9fa06d12ed3625f2
+PODFILE CHECKSUM: addb0f049e1db892d0545485cc7d33808d481076
 
 COCOAPODS: 1.3.1

@@ -1,0 +1,22 @@
+{
+  "name": "AirGap",
+  "version": "0.1.0",
+  "summary": "A short description of AirGap.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Shaheen Ghiassy/AirGap",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Shaheen Ghiassy": "shaheen@groupon.com"
+  },
+  "source": {
+    "git": "https://github.com/Shaheen Ghiassy/AirGap.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AirGap/Classes/**/*"
+}
