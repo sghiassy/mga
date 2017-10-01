@@ -1,0 +1,6 @@
+framework module carousel_light {
+  umbrella header "carousel-light-umbrella.h"
+
+  export *
+  module * { export * }
+}
