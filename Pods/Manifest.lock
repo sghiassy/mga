@@ -31,8 +31,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AirGap: cb9b171c564ec7cbd73c7d5250a4f3c378e92286
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  carousel: 33b1e88acf3cb540f00e6e60461398edc075d2da
-  carousel-light: 2d89b9080eee83b7eb48498cbbe76aa346d79aa3
+  carousel: c901144438c78afd38bce6bbce4a943f31ab1bd0
+  carousel-light: d68385d57d36a79f14245aa9a94420b82069c62b
   checkout: b259c252b7bf3ffa29c30867cbf1a30213d27646
   dealdetails: 95dcdd2917a668416942c222b30f9ee4b2537dd9
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220

@@ -24,5 +24,5 @@
       "carousel-light/Assets/*.png"
     ]
   },
-  "resources": "carousel-light/**/*.{png,json}"
+  "resources": "carousel-light/**/*.{png,json,yaml}"
 }

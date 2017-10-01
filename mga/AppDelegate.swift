@@ -9,6 +9,7 @@
 import UIKit
 import carousel
 import carousel_light
+import AirGap
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -30,9 +31,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let initialViewController = CarouselViewController()
-        initialViewController.view.frame = UIScreen.main.bounds
-        self.nav = UINavigationController(rootViewController: initialViewController)
+        
+        let browser = Browser(homepage:CarouselViewController())
+        
+        browser.view.frame = UIScreen.main.bounds
+        self.nav = UINavigationController(rootViewController: browser)
         self.nav?.setNavigationBarHidden(true, animated: false)
 
         self.window?.rootViewController = self.nav
