@@ -12,35 +12,22 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var nav: UINavigationController?
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
-        // 1
-        guard userActivity.activityType == NSUserActivityTypeBrowsingWeb,
-            let url = userActivity.webpageURL,
-            let components = URLComponents(url: url, resolvingAgainstBaseURL: true) else {
-            return false
-        }
-//
-//        // 3
-//        let webpageUrl = URL(string: "http://gorpon.herokuapp.com")!
-//        application.open(webpageUrl, options:["thing":"thing"]) { (works) in
-//            //
-//        }
-//
-//        return false
+        let initialViewController = ViewController(text: "From UserActivity")
+        self.nav?.pushViewController(initialViewController, animated: true)
         return true
     }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let initialViewController = ViewController(text: "FromAppDelegate")
+        let initialViewController = ViewController(text: "From AppDelegate")
         initialViewController.view.frame = UIScreen.main.bounds
-        let nc = UINavigationController(rootViewController: initialViewController)
-        
-        
-        
-        self.window?.rootViewController = nc
+        self.nav = UINavigationController(rootViewController: initialViewController)
+
+        self.window?.rootViewController = self.nav
         self.window?.makeKeyAndVisible()
         
         return true
