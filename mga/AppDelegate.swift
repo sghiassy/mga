@@ -8,6 +8,7 @@
 
 import UIKit
 import carousel
+import carousel_light
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
