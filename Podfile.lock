@@ -8,7 +8,8 @@ PODS:
   - carousel-light (0.1.0):
     - AirGap
   - checkout (0.1.0)
-  - dealdetails (0.1.0)
+  - dealdetails (0.1.0):
+    - AirGap
   - NSURL+QueryDictionary (1.2.0)
   - SwiftyJSON (3.1.4)
   - Yaml (3.3.1)
@@ -40,7 +41,7 @@ SPEC CHECKSUMS:
   carousel: 6906d7880024a43561e0be3450746f3a073911cb
   carousel-light: befa9b4086381c0545543c40b5b85ee62115aa60
   checkout: b259c252b7bf3ffa29c30867cbf1a30213d27646
-  dealdetails: 95dcdd2917a668416942c222b30f9ee4b2537dd9
+  dealdetails: 1c72499ea85d510f3153edcacd711bbbd8f403de
   NSURL+QueryDictionary: bae616404e2adf6409d3d5c02a093cbf44c8a236
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   Yaml: 18b2cf7301c4132e2bbb508a6921d2637ed3046c

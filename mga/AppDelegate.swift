@@ -37,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Setup Browser Configuration
         Browser.setConfig("carousel")
         Browser.setConfig("carousel-light")
+        Browser.setConfig("dealdetails")
         Browser.frame = UIScreen.main.bounds
         
         // Init Application's Main Window and Show
