@@ -24,5 +24,10 @@
       "carousel/Assets/*.png"
     ]
   },
-  "resources": "carousel/**/*.{png,json,yaml}"
+  "resources": "carousel/**/*.{png,json,yaml}",
+  "dependencies": {
+    "AirGap": [
+
+    ]
+  }
 }

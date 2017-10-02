@@ -17,11 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
-        
-        let url = userActivity.webpageURL
-        let path = url?.path ?? "/unknown"
-        let query = url?.query ?? "?blank"
-        let _ = ViewController(path: path, query: query)
+        Browser.goto(userActivity.webpageURL?.absoluteString ?? "") { (res) in
+            print(res)
+        }
+//        let url = userActivity.webpageURL
+//        let path = url?.path ?? "/unknown"
+//        let query = url?.query ?? "?blank"
+//        let _ = ViewController(path: path, query: query)
 //        self.nav?.pushViewController(initialViewController, animated: true)
         
         return true
@@ -33,8 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.isStatusBarHidden = true
         
         // Setup Browser Configuration
-        Browser.setConfig(DNS.loadConfigForDomain("carousel")!, CarouselViewController.self) // In the future you won't have to pass in the VC. Just cheating for now
-        Browser.setConfig(DNS.loadConfigForDomain("carousel-light")!, CarouselLightViewController.self)
+        Browser.setConfig("carousel")
+        Browser.setConfig("carousel-light")
         Browser.frame = UIScreen.main.bounds
         
         // Init Application's Main Window and Show
@@ -42,7 +44,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = Browser.rootViewController
         self.window?.makeKeyAndVisible()
         
-        Browser.goto("carousel-light.groupon.com")
+        Browser.goto("carousel.groupon.com") { (res) in
+            print(res)
+        }
         
         return true
     }
