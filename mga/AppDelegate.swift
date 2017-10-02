@@ -32,10 +32,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        let browser = Browser(homepage:CarouselViewController())
+        Browser.shared.setHomepage(CarouselViewController())
+        let carouselConfigString = DNS.YAMLFile(fileName: "carousel-domain-config", inBundle: Bundle(for:CarouselViewController.self))
+        Browser.shared.setConfig(carouselConfigString!)
         
-        browser.view.frame = UIScreen.main.bounds
-        self.nav = UINavigationController(rootViewController: browser)
+        Browser.shared.viewport.view.frame = UIScreen.main.bounds
+        self.nav = UINavigationController(rootViewController: Browser.shared.viewport)
         self.nav?.setNavigationBarHidden(true, animated: false)
 
         self.window?.rootViewController = self.nav
