@@ -7,7 +7,8 @@ PODS:
     - AirGap
   - carousel-light (0.1.0):
     - AirGap
-  - checkout (0.1.0)
+  - checkout (0.1.0):
+    - AirGap
   - dealdetails (0.1.0):
     - AirGap
   - NSURL+QueryDictionary (1.2.0)
@@ -40,7 +41,7 @@ SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   carousel: 6906d7880024a43561e0be3450746f3a073911cb
   carousel-light: befa9b4086381c0545543c40b5b85ee62115aa60
-  checkout: b259c252b7bf3ffa29c30867cbf1a30213d27646
+  checkout: 80a197f07f684e551805a9243d132849b74ec2a1
   dealdetails: 1c72499ea85d510f3153edcacd711bbbd8f403de
   NSURL+QueryDictionary: bae616404e2adf6409d3d5c02a093cbf44c8a236
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220

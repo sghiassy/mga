@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.setupWindow()
         
-        Browser.goto("carousel-light.groupon.com")
+        Browser.goto("carousel.groupon.com")
         
         return true
     }
@@ -38,6 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Browser.setConfig("carousel")
         Browser.setConfig("carousel-light")
         Browser.setConfig("dealdetails")
+        Browser.setConfig("checkout")
         Browser.frame = UIScreen.main.bounds
         
         // Init Application's Main Window and Show
