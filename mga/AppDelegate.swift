@@ -18,17 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
         Browser.goto(userActivity.webpageURL?.absoluteString ?? "")
-//        let url = userActivity.webpageURL
-//        let path = url?.path ?? "/unknown"
-//        let query = url?.query ?? "?blank"
-//        let _ = ViewController(path: path, query: query)
-//        self.nav?.pushViewController(initialViewController, animated: true)
-        
         return true
     }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        self.setupWindow()
+        
+        Browser.goto("carousel-light.groupon.com")
+        
+        return true
+    }
+    
+    func setupWindow() {
         // Hide the Status Bar
         UIApplication.shared.isStatusBarHidden = true
         
@@ -41,10 +43,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = Browser.rootViewController
         self.window?.makeKeyAndVisible()
-        
-        Browser.goto("carousel.groupon.com")
-        
-        return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
