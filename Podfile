@@ -6,6 +6,7 @@ target 'mga' do
   pod 'carousel-light', :path => '../carousel-light'
   pod 'dealdetails', :path => '../dealdetails'
   pod 'checkout', :path => '../checkout'
+  pod 'AirGap', :path => '../air-gap/'
   pod 'Alamofire'
   pod 'SwiftyJSON'
 end

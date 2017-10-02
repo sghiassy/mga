@@ -16,12 +16,18 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
   "source_files": "carousel/Classes/**/*",
   "resource_bundles": {
     "carousel": [
       "carousel/Assets/*.png"
+    ]
+  },
+  "resources": "carousel/**/*.{png,json,yaml}",
+  "dependencies": {
+    "AirGap": [
+
     ]
   }
 }

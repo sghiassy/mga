@@ -8,36 +8,43 @@
 
 import UIKit
 import carousel
+import carousel_light
+import AirGap
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var nav: UINavigationController?
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
-        
-        let url = userActivity.webpageURL
-        let path = url?.path ?? "/unknown"
-        let query = url?.query ?? "?blank"
-        let initialViewController = ViewController(path: path, query: query)
-        self.nav?.pushViewController(initialViewController, animated: true)
-        
+        Browser.goto(userActivity.webpageURL?.absoluteString ?? "")
         return true
     }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        let initialViewController = CarouselViewController()
-        initialViewController.view.frame = UIScreen.main.bounds
-        self.nav = UINavigationController(rootViewController: initialViewController)
-        self.nav?.setNavigationBarHidden(true, animated: false)
-
-        self.window?.rootViewController = self.nav
-        self.window?.makeKeyAndVisible()
+        self.setupWindow()
+        
+        Browser.goto("carousel.groupon.com")
         
         return true
+    }
+    
+    func setupWindow() {
+        // Hide the Status Bar
+        UIApplication.shared.isStatusBarHidden = true
+        
+        // Setup Browser Configuration
+        Browser.setConfig("carousel")
+        Browser.setConfig("carousel-light")
+        Browser.setConfig("dealdetails")
+        Browser.setConfig("checkout")
+        Browser.frame = UIScreen.main.bounds
+        
+        // Init Application's Main Window and Show
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = Browser.rootViewController
+        self.window?.makeKeyAndVisible()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

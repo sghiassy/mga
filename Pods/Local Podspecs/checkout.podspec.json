@@ -16,7 +16,18 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "checkout/Classes/**/*"
+  "source_files": "checkout/Classes/**/*",
+  "resource_bundles": {
+    "checkout": [
+      "checkout/Assets/*.png"
+    ]
+  },
+  "resources": "checkout/**/*.{png,json,yaml}",
+  "dependencies": {
+    "AirGap": [
+
+    ]
+  }
 }

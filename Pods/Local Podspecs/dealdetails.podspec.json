@@ -16,7 +16,18 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "dealdetails/Classes/**/*"
+  "source_files": "dealdetails/Classes/**/*",
+  "resource_bundles": {
+    "dealdetails": [
+      "dealdetails/Assets/*.png"
+    ]
+  },
+  "resources": "dealdetails/**/*.{png,json,yaml}",
+  "dependencies": {
+    "AirGap": [
+
+    ]
+  }
 }
