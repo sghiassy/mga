@@ -33,14 +33,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.isStatusBarHidden = true
         
         // Setup Browser Configuration
-        Browser.setConfig(DNS.loadConfigForDomain("carousel")!, CarouselViewController.self) // In the future you won't have to pass in the VC
+        Browser.setConfig(DNS.loadConfigForDomain("carousel")!, CarouselViewController.self) // In the future you won't have to pass in the VC. Just cheating for now
+        Browser.setConfig(DNS.loadConfigForDomain("carousel-light")!, CarouselLightViewController.self)
         Browser.frame = UIScreen.main.bounds
-        Browser.goto("carousel.groupon.com")
         
         // Init Application's Main Window and Show
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = Browser.rootViewController
         self.window?.makeKeyAndVisible()
+        
+        Browser.goto("carousel-light.groupon.com")
         
         return true
     }
