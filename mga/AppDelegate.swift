@@ -15,34 +15,31 @@ import AirGap
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var nav: UINavigationController?
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
         
         let url = userActivity.webpageURL
         let path = url?.path ?? "/unknown"
         let query = url?.query ?? "?blank"
-        let initialViewController = ViewController(path: path, query: query)
-        self.nav?.pushViewController(initialViewController, animated: true)
+        let _ = ViewController(path: path, query: query)
+//        self.nav?.pushViewController(initialViewController, animated: true)
         
         return true
     }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        
-        Browser.shared.setHomepage(CarouselViewController())
-        let carouselConfigString = DNS.YAMLFile(fileName: "carousel-domain-config", inBundle: Bundle(for:CarouselViewController.self))
-        Browser.shared.setConfig(carouselConfigString!)
-        
-        Browser.shared.viewport.view.frame = UIScreen.main.bounds
-        self.nav = UINavigationController(rootViewController: Browser.shared.viewport)
-        self.nav?.setNavigationBarHidden(true, animated: false)
-
-        self.window?.rootViewController = self.nav
-        self.nav?.setNavigationBarHidden(true, animated: false)
+        // Hide the Status Bar
         UIApplication.shared.isStatusBarHidden = true
+        
+        // Setup Browser Configuration
+        Browser.setHomepage(CarouselViewController())
+        Browser.setConfig(DNS.loadConfigForDomain("carousel")!)
+        Browser.frame = UIScreen.main.bounds
+        
+        // Init Application's Main Window and Show
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = Browser.rootViewController
         self.window?.makeKeyAndVisible()
         
         return true
