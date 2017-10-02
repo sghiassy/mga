@@ -17,9 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
-        Browser.goto(userActivity.webpageURL?.absoluteString ?? "") { (res) in
-            print(res)
-        }
+        Browser.goto(userActivity.webpageURL?.absoluteString ?? "")
 //        let url = userActivity.webpageURL
 //        let path = url?.path ?? "/unknown"
 //        let query = url?.query ?? "?blank"
