@@ -44,9 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = Browser.rootViewController
         self.window?.makeKeyAndVisible()
         
-        Browser.goto("carousel.groupon.com") { (res) in
-            print(res)
-        }
+        Browser.goto("carousel.groupon.com")
         
         return true
     }
