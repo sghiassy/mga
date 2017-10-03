@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
-        Browser.goto(userActivity.webpageURL?.absoluteString ?? "")
+        Browser.show(userActivity.webpageURL?.absoluteString ?? "")
         return true
     }
 
@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.setupWindow()
         
-        Browser.goto("carousel.groupon.com")
+        Browser.show("carousel.groupon.com")
         
         return true
     }
