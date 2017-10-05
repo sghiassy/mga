@@ -1,0 +1,23 @@
+---
+airgapapi: 0.0.1
+info:
+  description: MGA
+  version: "1.0.0"
+  title: Gorpon's MGA App
+  contact:
+    email: shaheen@groupon.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+domain:
+  url: mga.groupon.com
+  description: The main prod server
+routeHandler: MGARouteHandler
+paths:
+  /log:
+    post:
+      summary: Post new information for logging
+    parameters:
+      - name: message
+        in: body
+        description: The information you want to post to the logging server

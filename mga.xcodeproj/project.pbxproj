@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		6EB8EC8BEA795DCA474DDC97 /* Pods_mga.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E6FA5AD3306CF0897A8729 /* Pods_mga.framework */; };
 		AA4B0D101F80B1170099EBD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4B0D0F1F80B1170099EBD3 /* AppDelegate.swift */; };
-		AA4B0D121F80B1170099EBD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4B0D111F80B1170099EBD3 /* ViewController.swift */; };
 		AA4B0D171F80B1180099EBD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA4B0D161F80B1180099EBD3 /* Assets.xcassets */; };
 		AA4B0D1A1F80B1180099EBD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4B0D181F80B1180099EBD3 /* LaunchScreen.storyboard */; };
 		AA4B0D251F80B1180099EBD3 /* mgaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4B0D241F80B1180099EBD3 /* mgaTests.swift */; };
 		AA4B0D301F80B1180099EBD3 /* mgaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4B0D2F1F80B1180099EBD3 /* mgaUITests.swift */; };
 		AA54DCB61F80C2CD005D6C07 /* mga.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = AA6FE8231F80B5250062BE7C /* mga.entitlements */; };
+		AAA7E9471F8430C300FC6BF0 /* mga-domain-config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = AAA7E9461F8430C300FC6BF0 /* mga-domain-config.yaml */; };
+		AAA7E9491F84330000FC6BF0 /* MGARouteHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA7E9481F84330000FC6BF0 /* MGARouteHandler.swift */; };
+		AAA7E94B1F84421600FC6BF0 /* GPNSTLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA7E94A1F84421600FC6BF0 /* GPNSTLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		A95D55652968CDA3A7F154A9 /* Pods-mga.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mga.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mga/Pods-mga.debug.xcconfig"; sourceTree = "<group>"; };
 		AA4B0D0C1F80B1170099EBD3 /* mga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4B0D0F1F80B1170099EBD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA4B0D111F80B1170099EBD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA4B0D161F80B1180099EBD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA4B0D191F80B1180099EBD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA4B0D1B1F80B1180099EBD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +51,9 @@
 		AA4B0D2F1F80B1180099EBD3 /* mgaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mgaUITests.swift; sourceTree = "<group>"; };
 		AA4B0D311F80B1180099EBD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA6FE8231F80B5250062BE7C /* mga.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mga.entitlements; sourceTree = "<group>"; };
+		AAA7E9461F8430C300FC6BF0 /* mga-domain-config.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mga-domain-config.yaml"; sourceTree = SOURCE_ROOT; };
+		AAA7E9481F84330000FC6BF0 /* MGARouteHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGARouteHandler.swift; sourceTree = "<group>"; };
+		AAA7E94A1F84421600FC6BF0 /* GPNSTLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPNSTLogger.swift; sourceTree = "<group>"; };
 		D1E6FA5AD3306CF0897A8729 /* Pods_mga.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mga.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,6 +91,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AA4340A61F8345F6002C43E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA4B0D161F80B1180099EBD3 /* Assets.xcassets */,
+				AA6FE8231F80B5250062BE7C /* mga.entitlements */,
+				AA4B0D181F80B1180099EBD3 /* LaunchScreen.storyboard */,
+				AA4B0D1B1F80B1180099EBD3 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		AA4B0D031F80B1170099EBD3 = {
 			isa = PBXGroup;
 			children = (
@@ -112,12 +127,11 @@
 		AA4B0D0E1F80B1170099EBD3 /* mga */ = {
 			isa = PBXGroup;
 			children = (
-				AA6FE8231F80B5250062BE7C /* mga.entitlements */,
 				AA4B0D0F1F80B1170099EBD3 /* AppDelegate.swift */,
-				AA4B0D111F80B1170099EBD3 /* ViewController.swift */,
-				AA4B0D161F80B1180099EBD3 /* Assets.xcassets */,
-				AA4B0D181F80B1180099EBD3 /* LaunchScreen.storyboard */,
-				AA4B0D1B1F80B1180099EBD3 /* Info.plist */,
+				AAA7E9461F8430C300FC6BF0 /* mga-domain-config.yaml */,
+				AAA7E9481F84330000FC6BF0 /* MGARouteHandler.swift */,
+				AAA7E94A1F84421600FC6BF0 /* GPNSTLogger.swift */,
+				AA4340A61F8345F6002C43E9 /* Resources */,
 			);
 			path = mga;
 			sourceTree = "<group>";
@@ -264,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA7E9471F8430C300FC6BF0 /* mga-domain-config.yaml in Resources */,
 				AA54DCB61F80C2CD005D6C07 /* mga.entitlements in Resources */,
 				AA4B0D1A1F80B1180099EBD3 /* LaunchScreen.storyboard in Resources */,
 				AA4B0D171F80B1180099EBD3 /* Assets.xcassets in Resources */,
@@ -296,6 +311,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-mga/Pods-mga-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AirGap/AirGap.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/NSURL+QueryDictionary/NSURL_QueryDictionary.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Yaml/Yaml.framework",
@@ -308,6 +324,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AirGap.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSURL_QueryDictionary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Yaml.framework",
@@ -361,7 +378,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA4B0D121F80B1170099EBD3 /* ViewController.swift in Sources */,
+				AAA7E9491F84330000FC6BF0 /* MGARouteHandler.swift in Sources */,
+				AAA7E94B1F84421600FC6BF0 /* GPNSTLogger.swift in Sources */,
 				AA4B0D101F80B1170099EBD3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

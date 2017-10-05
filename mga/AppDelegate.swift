@@ -17,10 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
-        Browser.show(userActivity.webpageURL?.absoluteString ?? "")
+        Browser.show(self.t(userActivity.webpageURL?.absoluteString))
         return true
     }
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.setupWindow()
@@ -35,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.isStatusBarHidden = true
         
         // Setup Browser Configuration
+        Browser.setConfig(filename: "mga-domain-config", bundleIdentifier: Bundle.main.bundleIdentifier!) // manually set config, since its not in Cocoapods
         Browser.setConfig("carousel")
         Browser.setConfig("carousel-light")
         Browser.setConfig("dealdetails")
@@ -69,6 +69,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    /**
+     * Didn't have time to code full domain tranlation logic, so just using this crap code the demo app
+     */
+    func t(_ str: String?) -> String {
+        guard let url = str else {
+            return ""
+        }
+        switch(url.prefix(33)) {
+        case "http://gorpon.herokuapp.com/deals":
+            return "http://dealdetails.groupon.com/deals\(String(url.dropFirst(33)))"
+        case "http://gorpon.herokuapp.com/cart/":
+            return "http://cart.groupon.com/\(String(url.dropFirst(33)))"
+        default:
+            return url
+        }
+    }
 }
 
+
+
+//        Browser.show("carousel.groupon.com?abTestCarouselSimple=false")
+//        Browser.show("dealdetails.groupon.com/skogg-gym")

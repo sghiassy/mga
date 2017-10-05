@@ -28,6 +28,12 @@
   "dependencies": {
     "AirGap": [
 
+    ],
+    "Alamofire": [
+
+    ],
+    "AlamofireImage": [
+
     ]
   }
 }
