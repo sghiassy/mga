@@ -18,6 +18,7 @@
 		AAA7E9491F84330000FC6BF0 /* MGARouteHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA7E9481F84330000FC6BF0 /* MGARouteHandler.swift */; };
 		AAA7E94B1F84421600FC6BF0 /* GPNSTLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA7E94A1F84421600FC6BF0 /* GPNSTLogger.swift */; };
 		AAAD261D1F85B47E00B37D57 /* GPLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAD261C1F85B47E00B37D57 /* GPLocationManager.swift */; };
+		AAAD261F1F85DA7100B37D57 /* Airgap.json in Resources */ = {isa = PBXBuildFile; fileRef = AAAD261E1F85DA7100B37D57 /* Airgap.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +53,11 @@
 		AA4B0D2F1F80B1180099EBD3 /* mgaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mgaUITests.swift; sourceTree = "<group>"; };
 		AA4B0D311F80B1180099EBD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA6FE8231F80B5250062BE7C /* mga.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mga.entitlements; sourceTree = "<group>"; };
-		AAA7E9461F8430C300FC6BF0 /* mga-domain-config.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mga-domain-config.yaml"; sourceTree = SOURCE_ROOT; };
+		AAA7E9461F8430C300FC6BF0 /* mga-domain-config.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "mga-domain-config.yaml"; path = "mga/mga-domain-config.yaml"; sourceTree = SOURCE_ROOT; };
 		AAA7E9481F84330000FC6BF0 /* MGARouteHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGARouteHandler.swift; sourceTree = "<group>"; };
 		AAA7E94A1F84421600FC6BF0 /* GPNSTLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPNSTLogger.swift; sourceTree = "<group>"; };
 		AAAD261C1F85B47E00B37D57 /* GPLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPLocationManager.swift; sourceTree = "<group>"; };
+		AAAD261E1F85DA7100B37D57 /* Airgap.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Airgap.json; path = mga/Airgap.json; sourceTree = SOURCE_ROOT; };
 		D1E6FA5AD3306CF0897A8729 /* Pods_mga.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mga.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -130,10 +132,10 @@
 			isa = PBXGroup;
 			children = (
 				AA4B0D0F1F80B1170099EBD3 /* AppDelegate.swift */,
-				AAA7E9461F8430C300FC6BF0 /* mga-domain-config.yaml */,
-				AAA7E9481F84330000FC6BF0 /* MGARouteHandler.swift */,
 				AAA7E94A1F84421600FC6BF0 /* GPNSTLogger.swift */,
 				AAAD261C1F85B47E00B37D57 /* GPLocationManager.swift */,
+				AAA7E9481F84330000FC6BF0 /* MGARouteHandler.swift */,
+				AAAD26241F85ECD800B37D57 /* Airgap Config */,
 				AA4340A61F8345F6002C43E9 /* Resources */,
 			);
 			path = mga;
@@ -155,6 +157,15 @@
 				AA4B0D311F80B1180099EBD3 /* Info.plist */,
 			);
 			path = mgaUITests;
+			sourceTree = "<group>";
+		};
+		AAAD26241F85ECD800B37D57 /* Airgap Config */ = {
+			isa = PBXGroup;
+			children = (
+				AAA7E9461F8430C300FC6BF0 /* mga-domain-config.yaml */,
+				AAAD261E1F85DA7100B37D57 /* Airgap.json */,
+			);
+			name = "Airgap Config";
 			sourceTree = "<group>";
 		};
 		F1FDA4C1ED1FEB9167696A42 /* Pods */ = {
@@ -285,6 +296,7 @@
 				AA54DCB61F80C2CD005D6C07 /* mga.entitlements in Resources */,
 				AA4B0D1A1F80B1180099EBD3 /* LaunchScreen.storyboard in Resources */,
 				AA4B0D171F80B1180099EBD3 /* Assets.xcassets in Resources */,
+				AAAD261F1F85DA7100B37D57 /* Airgap.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

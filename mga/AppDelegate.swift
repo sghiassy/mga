@@ -32,13 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setupWindow() {
         // Hide the Status Bar
         UIApplication.shared.isStatusBarHidden = true
-        
-        // Setup Browser Configuration
-        Browser.setConfig(filename: "mga-domain-config", bundleIdentifier: Bundle.main.bundleIdentifier!) // manually set config, since its not in Cocoapods
-        Browser.setConfig("carousel")
-        Browser.setConfig("carousel-light")
-        Browser.setConfig("dealdetails")
-        Browser.setConfig("checkout")
+        Browser.setup()
         Browser.frame = UIScreen.main.bounds
         
         // Init Application's Main Window and Show

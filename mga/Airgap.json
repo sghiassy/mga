@@ -1,0 +1,19 @@
+{
+    "domains": [{
+        "config" : "mga-domain-config",
+        "bundle" : "main"
+      }, {
+        "config" : "carousel-domain-config",
+        "bundle" : "org.cocoapods.carousel"
+      }, {
+        "config" : "carousel-light-domain-config",
+        "bundle" : "org.cocoapods.carousel-light"
+      }, {
+        "config" : "checkout-domain-config",
+        "bundle" : "org.cocoapods.checkout"
+      }, {
+        "config" : "dealdetails-domain-config",
+        "bundle" : "org.cocoapods.dealdetails"
+      }
+    ]
+}
