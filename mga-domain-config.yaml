@@ -21,3 +21,7 @@ paths:
       - name: message
         in: body
         description: The information you want to post to the logging server
+  /location:
+    get:
+      summary: Get the device's current location
+      

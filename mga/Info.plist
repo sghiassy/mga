@@ -27,6 +27,10 @@
 	</dict>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Just do it</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Just do it</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

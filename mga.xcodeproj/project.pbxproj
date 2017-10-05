@@ -17,6 +17,7 @@
 		AAA7E9471F8430C300FC6BF0 /* mga-domain-config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = AAA7E9461F8430C300FC6BF0 /* mga-domain-config.yaml */; };
 		AAA7E9491F84330000FC6BF0 /* MGARouteHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA7E9481F84330000FC6BF0 /* MGARouteHandler.swift */; };
 		AAA7E94B1F84421600FC6BF0 /* GPNSTLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA7E94A1F84421600FC6BF0 /* GPNSTLogger.swift */; };
+		AAAD261D1F85B47E00B37D57 /* GPLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAD261C1F85B47E00B37D57 /* GPLocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		AAA7E9461F8430C300FC6BF0 /* mga-domain-config.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mga-domain-config.yaml"; sourceTree = SOURCE_ROOT; };
 		AAA7E9481F84330000FC6BF0 /* MGARouteHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGARouteHandler.swift; sourceTree = "<group>"; };
 		AAA7E94A1F84421600FC6BF0 /* GPNSTLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPNSTLogger.swift; sourceTree = "<group>"; };
+		AAAD261C1F85B47E00B37D57 /* GPLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPLocationManager.swift; sourceTree = "<group>"; };
 		D1E6FA5AD3306CF0897A8729 /* Pods_mga.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mga.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -131,6 +133,7 @@
 				AAA7E9461F8430C300FC6BF0 /* mga-domain-config.yaml */,
 				AAA7E9481F84330000FC6BF0 /* MGARouteHandler.swift */,
 				AAA7E94A1F84421600FC6BF0 /* GPNSTLogger.swift */,
+				AAAD261C1F85B47E00B37D57 /* GPLocationManager.swift */,
 				AA4340A61F8345F6002C43E9 /* Resources */,
 			);
 			path = mga;
@@ -379,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAA7E9491F84330000FC6BF0 /* MGARouteHandler.swift in Sources */,
+				AAAD261D1F85B47E00B37D57 /* GPLocationManager.swift in Sources */,
 				AAA7E94B1F84421600FC6BF0 /* GPNSTLogger.swift in Sources */,
 				AA4B0D101F80B1170099EBD3 /* AppDelegate.swift in Sources */,
 			);

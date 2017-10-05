@@ -20,6 +20,12 @@ class MGARouteHandler: RouteHandler {
             })
         }
         
+        server.on(.GET, "/location") { (req, res, done) in
+            res.body["lat"] = GPLocationManager.shared.currentLocation.latitude
+            res.body["lng"] = GPLocationManager.shared.currentLocation.latitude
+            done()
+        }
+        
     }
 
 }
