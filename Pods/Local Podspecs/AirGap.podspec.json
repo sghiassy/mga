@@ -19,6 +19,12 @@
     "ios": "8.0"
   },
   "source_files": "AirGap/Classes/**/*",
+  "resource_bundles": {
+    "AirGap": [
+      "AirGap/Assets/*.png"
+    ]
+  },
+  "resources": "AirGap/Assets/**/*.{png,json,yaml}",
   "dependencies": {
     "Yaml": [
 

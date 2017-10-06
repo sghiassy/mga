@@ -30,14 +30,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupWindow() {
-        // Hide the Status Bar
-        UIApplication.shared.isStatusBarHidden = true
+        UIApplication.shared.isStatusBarHidden = true // Hide the Status Bar
+        self.window = UIWindow(frame: UIScreen.main.bounds) // Init Application's Main Window and Show
+        
         Browser.setup()
         Browser.frame = UIScreen.main.bounds
-        
-        // Init Application's Main Window and Show
-        self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = Browser.rootViewController
+        
         self.window?.makeKeyAndVisible()
     }
 
