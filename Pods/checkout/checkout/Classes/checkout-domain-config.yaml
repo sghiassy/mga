@@ -1,0 +1,23 @@
+---
+airgapapi: 0.0.1
+info:
+  description: Checkout
+  version: "1.0.0"
+  title: Gorpon's Checkout page
+  contact:
+    email: shaheen@groupon.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+domain:
+  url: cart.groupon.com
+  description: The main checkout server
+routeHandler: CheckoutRouteHandler
+paths:
+  /:sessionId:
+    show:
+      summary: Checkoutpage
+      description: This is the main page
+      responses:
+        '200':
+          description: Show the Checkoutpage per the session id

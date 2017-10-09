@@ -23,25 +23,47 @@ PODS:
   - Yaml (3.3.1)
 
 DEPENDENCIES:
-  - AirGap (from `../air-gap/`)
+  - AirGap (from `https://github.groupondev.com/shaheen/AirGap.git`, branch `master`)
   - Alamofire
-  - carousel (from `../carousel`)
-  - carousel-light (from `../carousel-light`)
-  - checkout (from `../checkout`)
-  - dealdetails (from `../dealdetails`)
+  - carousel (from `https://github.groupondev.com/shaheen/carousel.git`, branch `master`)
+  - carousel-light (from `https://github.groupondev.com/shaheen/carousel-light.git`, branch `master`)
+  - checkout (from `https://github.groupondev.com/shaheen/checkout.git`, branch `master`)
+  - dealdetails (from `https://github.groupondev.com/shaheen/dealdetails.git`, branch `master`)
   - SwiftyJSON
 
 EXTERNAL SOURCES:
   AirGap:
-    :path: ../air-gap/
+    :branch: master
+    :git: https://github.groupondev.com/shaheen/AirGap.git
   carousel:
-    :path: ../carousel
+    :branch: master
+    :git: https://github.groupondev.com/shaheen/carousel.git
   carousel-light:
-    :path: ../carousel-light
+    :branch: master
+    :git: https://github.groupondev.com/shaheen/carousel-light.git
   checkout:
-    :path: ../checkout
+    :branch: master
+    :git: https://github.groupondev.com/shaheen/checkout.git
   dealdetails:
-    :path: ../dealdetails
+    :branch: master
+    :git: https://github.groupondev.com/shaheen/dealdetails.git
+
+CHECKOUT OPTIONS:
+  AirGap:
+    :commit: a6667140f92979c93fcfdf0edbd6e4839fd2e51c
+    :git: https://github.groupondev.com/shaheen/AirGap.git
+  carousel:
+    :commit: a7ce9e9b4369ce66d1a6cb63d1ce682b89d2ee6e
+    :git: https://github.groupondev.com/shaheen/carousel.git
+  carousel-light:
+    :commit: c1e018cff23db572d8d6afd33e0927bcaa1714cd
+    :git: https://github.groupondev.com/shaheen/carousel-light.git
+  checkout:
+    :commit: 72ab5de1c987b31dfdb978a87ef47b3b656ad64d
+    :git: https://github.groupondev.com/shaheen/checkout.git
+  dealdetails:
+    :commit: 099780206a35cb0bd4d14ac6ddf6d01b918fc5b0
+    :git: https://github.groupondev.com/shaheen/dealdetails.git
 
 SPEC CHECKSUMS:
   AirGap: 840c90ec4958a3fe734202a3683e50ca3fe8abf7
@@ -55,6 +77,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   Yaml: 18b2cf7301c4132e2bbb508a6921d2637ed3046c
 
-PODFILE CHECKSUM: e81e2238d7ce7654b03d75aadfd1064ad9c02903
+PODFILE CHECKSUM: 11d3fed9f7354a3a277f1fc6dfff8af2cdbad819
 
 COCOAPODS: 1.3.1

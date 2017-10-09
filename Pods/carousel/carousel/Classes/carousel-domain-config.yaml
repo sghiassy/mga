@@ -1,0 +1,37 @@
+---
+airgapapi: 0.0.1
+info:
+  description: Carousel
+  version: "1.0.0"
+  title: Gorpon's main Carousel
+  contact:
+    email: shaheen@groupon.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+domain:
+  url: carousel.groupon.com
+  description: The main prod server
+aliases:
+  - host: gorpon.herokuapp.com
+routeHandler: CarouselRouteHandler
+paths:
+  /:
+    show:
+      summary: homepage
+      description: This is the main page
+      parameters:
+        - name: "abTestCarouselSimple"
+          in: "query"
+          description: "Turns the abTestCarouselSimple AB test on or off"
+          required: false
+          type: "string"
+          enum:
+          - "true"
+          - "false"
+          - "t"
+          - "f"
+          default: "false"
+      responses:
+        '200':
+          description: Show the main carousel

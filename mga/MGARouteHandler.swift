@@ -12,13 +12,13 @@ import AirGap
 class MGARouteHandler: RouteHandler {
     override public func routes(server:Server) {
         
-//        server.on(.POST, "/log") { (req, res, done) in
-//            req.body.forEach({ (entry) in
-//                if let message = entry.value as? String {
-//                    GPNSTLogger.shared.log(message)
-//                }
-//            })
-//        }
+        server.on(.POST, "/log") { (req, res, done) in
+            req.body.forEach({ (entry) in
+                if let message = entry.value as? String {
+                    GPNSTLogger.shared.log(message)
+                }
+            })
+        }
         
         server.on(.GET, "/location") { (req, res, done) in
             res.body["lat"] = GPLocationManager.shared.currentLocation.latitude

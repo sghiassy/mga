@@ -1,0 +1,26 @@
+---
+airgapapi: 0.0.1
+info:
+  description: Carousel-Light
+  version: "1.0.0"
+  title: Gorpon's main Carousel
+  contact:
+    email: shaheen@groupon.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+domain:
+    url: carousel-light.groupon.com
+    description: The main prod server
+routeHandler: CarouselLightRouteHandler
+paths:
+  /:
+    show:
+      summary: homepage
+      description: |
+        This is the main page
+      responses:
+        '200':
+          description: Show the main carousel
+          type: UIKit/UIViewController
+          file: CarouselLightViewController.swift

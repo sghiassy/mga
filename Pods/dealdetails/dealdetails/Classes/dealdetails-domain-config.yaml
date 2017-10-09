@@ -1,0 +1,23 @@
+---
+airgapapi: 0.0.1
+info:
+  description: Deal Details
+  version: "1.0.0"
+  title: Gorpon's main Deal Details
+  contact:
+    email: shaheen@groupon.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+domain:
+  url: dealdetails.groupon.com
+  description: The main prod server
+routeHandler: DealDetailsRouteHandler
+paths:
+  /deals/:dealId:
+    show:
+      summary: deal details page
+      description: This is the main page
+      responses:
+        '200':
+          description: Show the main DealDetails page from the provided dealid
