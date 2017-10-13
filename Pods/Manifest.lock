@@ -23,60 +23,38 @@ PODS:
   - Yaml (3.3.1)
 
 DEPENDENCIES:
-  - AirGap (from `https://github.groupondev.com/shaheen/AirGap.git`, branch `master`)
+  - AirGap (from `~/Dev/Groupon/AirGap/`)
   - Alamofire
-  - carousel (from `https://github.groupondev.com/shaheen/carousel.git`, branch `master`)
-  - carousel-light (from `https://github.groupondev.com/shaheen/carousel-light.git`, branch `master`)
-  - checkout (from `https://github.groupondev.com/shaheen/checkout.git`, branch `master`)
-  - dealdetails (from `https://github.groupondev.com/shaheen/dealdetails.git`, branch `master`)
+  - carousel (from `../carousel`)
+  - carousel-light (from `../carousel-light`)
+  - checkout (from `../checkout`)
+  - dealdetails (from `../dealdetails`)
   - SwiftyJSON
 
 EXTERNAL SOURCES:
   AirGap:
-    :branch: master
-    :git: https://github.groupondev.com/shaheen/AirGap.git
+    :path: ~/Dev/Groupon/AirGap/
   carousel:
-    :branch: master
-    :git: https://github.groupondev.com/shaheen/carousel.git
+    :path: ../carousel
   carousel-light:
-    :branch: master
-    :git: https://github.groupondev.com/shaheen/carousel-light.git
+    :path: ../carousel-light
   checkout:
-    :branch: master
-    :git: https://github.groupondev.com/shaheen/checkout.git
+    :path: ../checkout
   dealdetails:
-    :branch: master
-    :git: https://github.groupondev.com/shaheen/dealdetails.git
-
-CHECKOUT OPTIONS:
-  AirGap:
-    :commit: a6667140f92979c93fcfdf0edbd6e4839fd2e51c
-    :git: https://github.groupondev.com/shaheen/AirGap.git
-  carousel:
-    :commit: a7ce9e9b4369ce66d1a6cb63d1ce682b89d2ee6e
-    :git: https://github.groupondev.com/shaheen/carousel.git
-  carousel-light:
-    :commit: c1e018cff23db572d8d6afd33e0927bcaa1714cd
-    :git: https://github.groupondev.com/shaheen/carousel-light.git
-  checkout:
-    :commit: 72ab5de1c987b31dfdb978a87ef47b3b656ad64d
-    :git: https://github.groupondev.com/shaheen/checkout.git
-  dealdetails:
-    :commit: 099780206a35cb0bd4d14ac6ddf6d01b918fc5b0
-    :git: https://github.groupondev.com/shaheen/dealdetails.git
+    :path: ../dealdetails
 
 SPEC CHECKSUMS:
-  AirGap: 840c90ec4958a3fe734202a3683e50ca3fe8abf7
+  AirGap: 5c70b12db8b32e702915bf1304425f16e8198951
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
-  carousel: c8ce35ac0d004539a190fa48eabc7c819353b6ac
-  carousel-light: befa9b4086381c0545543c40b5b85ee62115aa60
-  checkout: 3b07241b060d3b888afb5602a5c12862308906e9
-  dealdetails: c6bfcd0e3004d9e076fb3b4e2ac6e25bcf614fe2
+  carousel: 8aa6efce2215406a7d5a6741e97f5883215dcbba
+  carousel-light: 9d60bb2af966d1e42ea06348a7ed48cea7517481
+  checkout: 2908d8e418f0266877a1dabc27bfdeea6d4f68e3
+  dealdetails: 9b00974fc2cf6e5eb21f236bd39a530110c1f353
   NSURL+QueryDictionary: bae616404e2adf6409d3d5c02a093cbf44c8a236
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   Yaml: 18b2cf7301c4132e2bbb508a6921d2637ed3046c
 
-PODFILE CHECKSUM: 11d3fed9f7354a3a277f1fc6dfff8af2cdbad819
+PODFILE CHECKSUM: 6778597903a142f20679289e6cbd4359d2d46a7c
 
 COCOAPODS: 1.3.1

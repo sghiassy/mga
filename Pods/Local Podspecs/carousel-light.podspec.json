@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of carousel-light.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Shaheen Ghiassy/carousel-light",
+  "homepage": "https://github.groupondev.com/shaheen/carousel-light",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,11 @@
     "Shaheen Ghiassy": "shaheen@groupon.com"
   },
   "source": {
-    "git": "https://github.com/Shaheen Ghiassy/carousel-light.git",
+    "git": "https://github.groupondev.com/shaheen/carousel-light.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "9.0"
   },
   "source_files": "carousel-light/Classes/**/*",
   "resource_bundles": {

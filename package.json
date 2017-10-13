@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install": "pod install",
+    "pod:install": "pod install",
     "x": "open mga.xcworkspace"
   },
   "repository": {
