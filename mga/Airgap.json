@@ -12,7 +12,7 @@
         "config" : "checkout-domain-config",
         "bundle" : "org.cocoapods.checkout"
       }, {
-        "config" : "dealdetails-domain-config",
+        "config" : "dealdetails-sampleapp-domain-config",
         "bundle" : "org.cocoapods.dealdetails"
       }
     ]

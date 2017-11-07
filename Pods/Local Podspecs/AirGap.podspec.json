@@ -1,9 +1,9 @@
 {
   "name": "AirGap",
   "version": "0.1.0",
-  "summary": "Data-Driven-Development for Large iOS Teams.",
-  "description": "AirGap is an iOS Framework that allows Developers to build their applications in a decoupled, domain-centric fashion. Airgap helps large iOS apps, break apart their internal constituents into seperate air-gapped applications that have zero-knowledge of one another, all while maintaing first-class communciation support.\n\nAirGap is the middleware that coordinates the gap and provides a host of tools and features to help large iOS teams decouple their apps, increase their testing ability and surface the app's functionality to the production organization.",
-  "homepage": "https://pages.github.groupondev.com/mobile/AirGap/",
+  "summary": "A short description of AirGap.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Shaheen Ghiassy/AirGap",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,11 @@
     "Shaheen Ghiassy": "shaheen@groupon.com"
   },
   "source": {
-    "git": "https://github.groupondev.com/mobile/AirGap",
+    "git": "https://github.com/Shaheen Ghiassy/AirGap.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "8.0"
   },
   "source_files": "AirGap/Classes/**/*",
   "resource_bundles": {

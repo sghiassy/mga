@@ -6,7 +6,7 @@ target 'mga' do
   pod 'carousel-light', :path => '../carousel-light'
   pod 'dealdetails', :path => '../dealdetails'
   pod 'checkout', :path => '../checkout'
-  pod 'AirGap', :path => '~/Dev/Groupon/AirGap/'
+  pod 'AirGap', :path => '../AirGap'
   pod 'Alamofire'
   pod 'SwiftyJSON'
 end

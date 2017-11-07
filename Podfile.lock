@@ -23,7 +23,7 @@ PODS:
   - Yaml (3.3.1)
 
 DEPENDENCIES:
-  - AirGap (from `~/Dev/Groupon/AirGap/`)
+  - AirGap (from `../AirGap`)
   - Alamofire
   - carousel (from `../carousel`)
   - carousel-light (from `../carousel-light`)
@@ -33,7 +33,7 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   AirGap:
-    :path: ~/Dev/Groupon/AirGap/
+    :path: ../AirGap
   carousel:
     :path: ../carousel
   carousel-light:
@@ -44,7 +44,7 @@ EXTERNAL SOURCES:
     :path: ../dealdetails
 
 SPEC CHECKSUMS:
-  AirGap: 5c70b12db8b32e702915bf1304425f16e8198951
+  AirGap: 840c90ec4958a3fe734202a3683e50ca3fe8abf7
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
   carousel: 8aa6efce2215406a7d5a6741e97f5883215dcbba
@@ -55,6 +55,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   Yaml: 18b2cf7301c4132e2bbb508a6921d2637ed3046c
 
-PODFILE CHECKSUM: 6778597903a142f20679289e6cbd4359d2d46a7c
+PODFILE CHECKSUM: 3922871c872ee303ad3513e418651a7ee8bbddc8
 
 COCOAPODS: 1.3.1
